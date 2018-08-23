@@ -1,2 +1,3 @@
-![GitHub Logo](/images/logo.png)
-# Preschoolers
+
+|![GitHub Logo](/images/logo.png) | Preschoolers 
+----------------------------------|--------------
