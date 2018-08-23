@@ -6,6 +6,7 @@ print("""
         add - dodaje uczniów do listy
         remove - usuwa uczniow do listy
         show - pokaz uczniow na liscie 
+        create - Utworz Baze przedszkolakow
 """)
 
 dodaj_przedszkolaka(input())
