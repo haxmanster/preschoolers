@@ -2,9 +2,14 @@ import pickle
 
 
 def dodaj_przedszkolaka(option):
-    with open('parrot.pkl', 'rb') as f:
-        listen = pickle.load(f)
+    listen = []
+
+    if option == "create":
+        with open('parrot.pkl', 'wb') as f:
+            pickle.dump(listen, f)
     if option == "show":
+        with open('parrot.pkl', 'rb') as f:
+            listen = pickle.load(f)
         print("Przedszkolaki znajdujace sie na liscie: ", listen)
 
     if option == "add":

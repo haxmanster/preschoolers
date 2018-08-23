@@ -1,4 +1,3 @@
-
 from function import dodaj_przedszkolaka
 
 print("""
