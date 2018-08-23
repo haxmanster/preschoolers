@@ -1,7 +1,7 @@
 from function import dodaj_przedszkolaka
 
 print("""
-    Wpisz opcje ktore chciałbyś wykonać w naszym programie:
+    Wpisz opcje które chciałbyś wykonać w naszym programie:
         
         add - dodaje uczniów do listy
         remove - usuwa uczniow do listy
@@ -9,4 +9,4 @@ print("""
         create - Utworz Baze przedszkolakow
 """)
 
-dodaj_przedszkolaka(input())
+dodaj_przedszkolaka(input("C:\> "))
