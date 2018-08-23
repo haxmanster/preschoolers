@@ -1,4 +1,3 @@
-# Preschoolers
 
-|![GitHub Logo](/images/logo.png) | Kindergartens administration makes more easy 
-----------------------------------|---------------------------------------------
+|![GitHub Logo](/images/logo.png) | Preschoolers 
+----------------------------------|--------------
