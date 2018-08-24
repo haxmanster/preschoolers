@@ -1,6 +1,10 @@
 from function import dodaj_przedszkolaka
 
-print("""
+wybor = "t"
+t = str(wybor)
+while wybor == t:
+
+    print("""
     Wpisz opcje które chciałbyś wykonać w naszym programie:
         
         add - dodaje uczniów do listy
@@ -9,4 +13,6 @@ print("""
         create - Utworz Baze przedszkolakow
 """)
 
-dodaj_przedszkolaka(input("C:\> "))
+
+    dodaj_przedszkolaka(input("C:\> "))
+    wybor = str(input("Kontynuowac ? T / N "))
