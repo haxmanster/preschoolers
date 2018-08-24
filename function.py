@@ -1,10 +1,11 @@
 import pickle
+import os.path
 
 
 def dodaj_przedszkolaka(option):
     listen = []
 
-    if option == "create":
+    if os.path.isfile("parrot.pkl") is False:
         with open('parrot.pkl', 'wb') as f:
             pickle.dump(listen, f)
 
