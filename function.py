@@ -36,3 +36,32 @@ def dodaj_przedszkolaka(option):
                 pickle.dump(listen, f)
             print(listen)
     return
+
+
+def oceny_maluszkow(option):
+
+    oceny = {}
+
+    if os.path.isfile('oceny.pkl') is False:
+        with open('oceny.pkl', 'wb') as f:
+            pickle.dump(oceny, f)
+
+    if option == "add":
+
+        with open('oceny.pkl', 'rb') as f:
+            oceny = pickle.load(f)
+        ile = input("Ilu przedszkolaków chcesz ocenic?  ")
+
+        for dodaj in range(int(ile)):
+            dziecko = input("Wpisz przedszkolaka ktorego chcesz ocenic: ")
+            wynik = int(input("Podaj ocene 0d 1 do 6: "))
+            oceny[dziecko] = wynik
+        with open('oceny.pkl', 'wb') as f:
+            pickle.dump(oceny, f)
+        
+
+    if option == "show":
+        with open('oceny.pkl', 'rb') as f:
+            oceny = pickle.load(f)
+        print(oceny)
+    return
